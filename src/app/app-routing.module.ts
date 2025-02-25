@@ -1,34 +1,34 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { AboutUsComponent } from './components/about-us/about-us.component';
-import { Blogs2Component } from './components/blogs2/blogs2.component';
-import { ContactComponent } from './components/contact/contact.component';
-import { FAQComponent } from './components/faq/faq.component';
-import { JobComponent } from './components/job/job.component';
-import { TrainingComponent } from './components/training/training.component';
-import { LoginComponent } from './components/login/login.component';
-import { RegisterComponent } from './components/register/register.component';
-import { ForgotScreenComponent } from './components/forgot-screen/forgot-screen.component';
-import { EnterCodeComponent } from './components/enter-code/enter-code.component';
-import { UserDashboardComponent } from './Dashboard/User/user-dashboard/user-dashboard.component';
-import { AdminDashboardComponent } from './Dashboard/Admin/admin-dashboard/admin-dashboard.component';
-import { BannerComponent } from './components/banner/banner.component';
+import { LoginComponent } from '../../libs/pages/login/login.component';
+import { RegisterComponent } from '../../libs/pages/register/register.component';
+import { ForgotScreenComponent } from '../../libs/pages/login/forgot-screen/forgot-screen.component';
+import { EnterCodeComponent } from '../../libs/pages/login/enter-code/enter-code.component';
+import { UserDashboardComponent } from '../../libs/dashboard/user-dashboard/user-dashboard.component';
+import { AdminDashboardComponent } from '../../libs/dashboard/admin-dashboard/admin-dashboard.component';
+import { HomePageComponent } from '../../libs/pages/home-page/home-page.component';
+import { AboutUsPageComponent } from '../../libs/pages/about-us-page/about-us-page.component';
+import { JobsPageComponent } from '../../libs/pages/jobs-page/jobs-page.component';
+import { TrainingPageComponent } from '../../libs/pages/training-page/training-page.component';
+import { BlogsPageComponent } from '../../libs/pages/blogs-page/blogs-page.component';
+import { ContactUsPageComponent } from '../../libs/pages/contact-us-page/contact-us-page.component';
+import { FAQPageComponent } from 'libs/pages/faqpage/faqpage.component';
 
 const routes: Routes = [
-  { path: '', component:  BannerComponent},
-  { path: 'about-us', component: AboutUsComponent },
-  { path: 'jobs', component: JobComponent },
-  { path: 'trainings', component: TrainingComponent },
-  { path: 'blogs', component: Blogs2Component },
-  { path: 'contact', component: ContactComponent },
-  { path: 'faq', component: FAQComponent },
+  { path: '', component: HomePageComponent },
+  { path: 'about-us', component: AboutUsPageComponent },
+  { path: 'jobs', component: JobsPageComponent },
+  { path: 'trainings', component: TrainingPageComponent },
+  { path: 'blogs', component: BlogsPageComponent },
+  { path: 'contact', component: ContactUsPageComponent },
+  { path: 'faq', component: FAQPageComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'forgot', component: ForgotScreenComponent },
   { path: 'entercode', component: EnterCodeComponent },
-  {path: 'user-dashboard', component: UserDashboardComponent},
-  {path: 'admin-dashboard', component: AdminDashboardComponent},
+  { path: 'user-dashboard', component: UserDashboardComponent },
+  { path: 'admin-dashboard', component: AdminDashboardComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' } // Redirect unknown paths to Home
 ];
 

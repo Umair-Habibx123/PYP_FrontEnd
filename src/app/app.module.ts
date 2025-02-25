@@ -3,48 +3,55 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from '../app/components/navbar/navbar.component';
-import { AboutUsComponent } from './components/about-us/about-us.component';
-import { OurServicesComponent } from './components/our-services/our-services.component';
-import { WhyPortalComponent } from './components/why-portal/why-portal.component';
-import { TeamComponent } from './components/team/team.component';
-import { SuccessStoryComponent } from './components/success-story/success-story.component';
-import { ContactComponent } from './components/contact/contact.component';
-import { FAQComponent } from './components/faq/faq.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { BlogsComponent } from './components/blogs/blogs.component';
-import { JobComponent } from './components/job/job.component';
-import { Blogs2Component } from './components/blogs2/blogs2.component';
-import { BlogService } from '../app/services/blog.service';
-import { TrainingComponent } from './components/training/training.component';
-import { LoginComponent } from './components/login/login.component';
-import { RegisterComponent } from './components/register/register.component';
-import { Form1Component } from './components/form1/form1.component';
-import { Form2Component } from './components/form2/form2.component';
-import { Form3Component } from './components/form3/form3.component';
-import { ForgotScreenComponent } from './components/forgot-screen/forgot-screen.component';
-import { EnterCodeComponent } from './components/enter-code/enter-code.component';
-import { UserDashboardComponent } from './Dashboard/User/user-dashboard/user-dashboard.component';
-import { OverviewComponent } from './Dashboard/User/user-dashboard/overview/overview.component';
-import { AppliedJobsComponent } from './Dashboard/User/user-dashboard/applied-jobs/applied-jobs.component';
-import { FavouriteJobsComponent } from './Dashboard/User/user-dashboard/favourite-jobs/favourite-jobs.component';
-import { JobAlertsComponent } from './Dashboard/User/user-dashboard/job-alerts/job-alerts.component';
-import { PrivacyPolicyComponent } from './Dashboard/shared/privacy-policy/privacy-policy.component';
-import { SettingsComponent } from './Dashboard/shared/settings/settings.component';
-import { AdminDashboardComponent } from './Dashboard/Admin/admin-dashboard/admin-dashboard.component';
-import { DashboardComponent } from './Dashboard/Admin/admin-dashboard/dashboard/dashboard.component';
-import { RecordComponent } from './Dashboard/Admin/admin-dashboard/record/record.component';
-import { TrainingsComponent } from './Dashboard/Admin/admin-dashboard/trainings/trainings.component';
+import { NavbarComponent } from '../../libs/pages/navbar/navbar.component';
+import { AboutUsComponent } from '../../libs/pages/home-page/about-us/about-us.component';
+import { OurServicesComponent } from '../../libs/pages/home-page/our-services/our-services.component';
+import { WhyPortalComponent } from '../../libs/pages/home-page/why-portal/why-portal.component';
+import { TeamComponent } from '../../libs/pages/home-page/team/team.component';
+import { SuccessStoryComponent } from '../../libs/pages/home-page/success-story/success-story.component';
+import { ContactComponent } from '../../libs/pages/home-page/contact/contact.component';
+import { FAQComponent } from '../../libs/pages/home-page/faq/faq.component';
+import { FooterComponent } from '../../libs/pages/footer/footer.component';
+import { BlogsComponent } from '../../libs/pages/home-page/blogs/blogs.component';
+import { JobComponent } from '../../libs/pages/jobs-page/job/job.component';
+import { Blogs2Component } from '../../libs/pages/blogs-page/blogs2/blogs2.component';
+import { BlogService } from '../../libs/services/blog.service';
+import { TrainingComponent } from '../../libs/pages/training-page/training/training.component';
+import { LoginComponent } from '../../libs/pages/login/login.component';
+import { RegisterComponent } from '../../libs/pages/register/register.component';
+import { Form1Component } from '../../libs/pages/register/form1/form1.component';
+import { Form2Component } from '../../libs/pages/register/form2/form2.component';
+import { Form3Component } from '../../libs/pages/register/form3/form3.component';
+import { ForgotScreenComponent } from '../../libs//pages/login/forgot-screen/forgot-screen.component';
+import { EnterCodeComponent } from '../../libs/pages/login/enter-code/enter-code.component';
+import { UserDashboardComponent } from '../../libs/dashboard/user-dashboard/user-dashboard.component';
+import { OverviewComponent } from '../../libs/dashboard/user-dashboard/overview/overview.component';
+import { AppliedJobsComponent } from '../../libs/dashboard/user-dashboard/applied-jobs/applied-jobs.component';
+import { FavouriteJobsComponent } from '../../libs/dashboard/user-dashboard/favourite-jobs/favourite-jobs.component';
+import { JobAlertsComponent } from '../../libs/dashboard/user-dashboard/job-alerts/job-alerts.component';
+import { PrivacyPolicyComponent } from '../../libs/dashboard/shared/privacy-policy/privacy-policy.component';
+import { SettingsComponent } from '../../libs/dashboard/shared/settings/settings.component';
+import { AdminDashboardComponent } from '../../libs/dashboard/admin-dashboard/admin-dashboard.component';
+import { DashboardComponent } from '../../libs/dashboard/admin-dashboard/dashboard/dashboard.component';
+import { RecordComponent } from '../../libs/dashboard/admin-dashboard/record/record.component';
+import { TrainingsComponent } from '../../libs/dashboard/admin-dashboard/trainings/trainings.component';
 import { FormsModule } from '@angular/forms';
-import { ConfigurationComponent } from './Dashboard/Admin/admin-dashboard/configuration/configuration.component';
-import { SliderTabComponent } from './Dashboard/Admin/admin-dashboard/configuration/slider-tab/slider-tab.component';
-import { BlogsTabComponent } from './Dashboard/Admin/admin-dashboard/configuration/blogs-tab/blogs-tab.component';
-import { AboutUsTabComponent } from './Dashboard/Admin/admin-dashboard/configuration/about-us-tab/about-us-tab.component';
-import { SliderModalComponent } from './Dashboard/Admin/admin-dashboard/configuration/slider-modal/slider-modal.component';
-import { BlogsModalComponent } from './Dashboard/Admin/admin-dashboard/configuration/blogs-modal/blogs-modal.component';
-import { AboutUsModalComponent } from './Dashboard/Admin/admin-dashboard/configuration/about-us-modal/about-us-modal.component';
-import { TestimonialsComponent } from './Dashboard/Admin/admin-dashboard/testimonials/testimonials.component';
-import { BannerComponent } from './components/banner/banner.component';
+import { ConfigurationComponent } from '../../libs/dashboard/admin-dashboard/configuration/configuration.component';
+import { SliderTabComponent } from '../../libs/dashboard/admin-dashboard/configuration/slider-tab/slider-tab.component';
+import { BlogsTabComponent } from '../../libs/dashboard/admin-dashboard/configuration/blogs-tab/blogs-tab.component';
+import { AboutUsTabComponent } from '../../libs/dashboard/admin-dashboard/configuration/about-us-tab/about-us-tab.component';
+import { SliderModalComponent } from '../../libs/dashboard/admin-dashboard/configuration/slider-modal/slider-modal.component';
+import { BlogsModalComponent } from '../../libs/dashboard/admin-dashboard/configuration/blogs-modal/blogs-modal.component';
+import { AboutUsModalComponent } from '../../libs/dashboard/admin-dashboard/configuration/about-us-modal/about-us-modal.component';
+import { TestimonialsComponent } from '../../libs/dashboard/admin-dashboard/testimonials/testimonials.component';
+import { BannerComponent } from '../../libs/pages/home-page/banner/banner.component';
+import { HomePageComponent } from '../../libs/pages/home-page/home-page.component';
+import { AboutUsPageComponent } from '../../libs/pages/about-us-page/about-us-page.component';
+import { JobsPageComponent } from '../../libs/pages/jobs-page/jobs-page.component';
+import { TrainingPageComponent } from '../../libs/pages/training-page/training-page.component';
+import { BlogsPageComponent } from '../../libs/pages/blogs-page/blogs-page.component';
+import { ContactUsPageComponent } from '../../libs/pages/contact-us-page/contact-us-page.component';
+import { FAQPageComponent } from '../../libs/pages/faqpage/faqpage.component';
 
 @NgModule({
   declarations: [
@@ -89,6 +96,13 @@ import { BannerComponent } from './components/banner/banner.component';
     AboutUsModalComponent,
     TestimonialsComponent,
     BannerComponent,
+    HomePageComponent,
+    AboutUsPageComponent,
+    JobsPageComponent,
+    TrainingPageComponent,
+    BlogsPageComponent,
+    ContactUsPageComponent,
+    FAQPageComponent,
 
   ],
 
