@@ -36,13 +36,12 @@ import { DashboardComponent } from '../../libs/dashboard/admin-dashboard/dashboa
 import { RecordComponent } from '../../libs/dashboard/admin-dashboard/record/record.component';
 import { TrainingsComponent } from '../../libs/dashboard/admin-dashboard/trainings/trainings.component';
 import { FormsModule } from '@angular/forms';
-import { ConfigurationComponent } from '../../libs/dashboard/admin-dashboard/configuration/configuration.component';
-import { SliderTabComponent } from '../../libs/dashboard/admin-dashboard/configuration/slider-tab/slider-tab.component';
-import { BlogsTabComponent } from '../../libs/dashboard/admin-dashboard/configuration/blogs-tab/blogs-tab.component';
-import { AboutUsTabComponent } from '../../libs/dashboard/admin-dashboard/configuration/about-us-tab/about-us-tab.component';
-import { SliderModalComponent } from '../../libs/dashboard/admin-dashboard/configuration/slider-modal/slider-modal.component';
-import { BlogsModalComponent } from '../../libs/dashboard/admin-dashboard/configuration/blogs-modal/blogs-modal.component';
-import { AboutUsModalComponent } from '../../libs/dashboard/admin-dashboard/configuration/about-us-modal/about-us-modal.component';
+import { SliderTabComponent } from '../../libs/dashboard/admin-dashboard/configurate/slider-tab/slider-tab.component';
+import { BlogsTabComponent } from '../../libs/dashboard/admin-dashboard/configurate/blogs-tab/blogs-tab.component';
+import { AboutUsTabComponent } from '../../libs/dashboard/admin-dashboard/configurate/about-us-tab/about-us-tab.component';
+import { SliderModalComponent } from '../../libs/dashboard/admin-dashboard/configurate/slider-modal/slider-modal.component';
+import { BlogsModalComponent } from '../../libs/dashboard/admin-dashboard/configurate/blogs-modal/blogs-modal.component';
+import { AboutUsModalComponent } from '../../libs/dashboard/admin-dashboard/configurate/about-us-modal/about-us-modal.component';
 import { TestimonialsComponent } from '../../libs/dashboard/admin-dashboard/testimonials/testimonials.component';
 import { BannerComponent } from '../../libs/pages/home-page/banner/banner.component';
 import { HomePageComponent } from '../../libs/pages/home-page/home-page.component';
@@ -52,6 +51,7 @@ import { TrainingPageComponent } from '../../libs/pages/training-page/training-p
 import { BlogsPageComponent } from '../../libs/pages/blogs-page/blogs-page.component';
 import { ContactUsPageComponent } from '../../libs/pages/contact-us-page/contact-us-page.component';
 import { FAQPageComponent } from '../../libs/pages/faqpage/faqpage.component';
+import { ConfigurateComponent } from '../../libs/dashboard/admin-dashboard/configurate/configurate.component';
 
 @NgModule({
   declarations: [
@@ -87,7 +87,6 @@ import { FAQPageComponent } from '../../libs/pages/faqpage/faqpage.component';
     DashboardComponent,
     RecordComponent,
     TrainingsComponent,
-    ConfigurationComponent,
     SliderTabComponent,
     BlogsTabComponent,
     AboutUsTabComponent,
@@ -103,6 +102,7 @@ import { FAQPageComponent } from '../../libs/pages/faqpage/faqpage.component';
     BlogsPageComponent,
     ContactUsPageComponent,
     FAQPageComponent,
+    ConfigurateComponent,
 
   ],
 

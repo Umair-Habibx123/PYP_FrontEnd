@@ -2,11 +2,11 @@ import { Component, EventEmitter, Output } from '@angular/core';
 import { colors } from '../../../styles/colors';
 
 @Component({
-  selector: 'app-configuration',
-  templateUrl: './configuration.component.html',
-  styleUrls: ['./configuration.component.scss']
+  selector: 'app-configurate',
+  templateUrl: './configurate.component.html',
+  styleUrls: ['./configurate.component.scss']
 })
-export class ConfigurationComponent {
+export class ConfigurateComponent {
 
 
 
@@ -35,4 +35,5 @@ export class ConfigurationComponent {
     this.selectedTab = index;
     this.tabChanged.emit(index);
   }
+
 }
